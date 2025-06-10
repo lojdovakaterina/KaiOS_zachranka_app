@@ -1,0 +1,117 @@
+:root {
+  /* theme colors */
+  --themeColor: #124139;
+  --themeColorLight: #C2E2DF;
+  --highlight: #ACD1CD;
+  --textColor: #135149;
+  --circleColor: #EC2938;
+  --testColor: #EC6000;
+  --grayColor: #829795;
+  --circleDiameter: 88px;
+
+  /* filters for svg manipulation */
+  --themeColorFilter: invert(17%) sepia(81%) saturate(379%) hue-rotate(120deg) brightness(96%) contrast(93%);
+  --themeColorLightFilter: invert(98%) sepia(3%) saturate(1589%) hue-rotate(118deg) brightness(95%) contrast(85%);
+  --highlightFilter: invert(91%) sepia(15%) saturate(364%) hue-rotate(121deg) brightness(88%) contrast(87%);
+  --textColorFilter: invert(25%) sepia(13%) saturate(3227%) hue-rotate(125deg) brightness(83%) contrast(85%);
+
+  --textsize-l: 17px;
+  --textsize-m: 14px;
+  --textsize-s: 12px;
+}
+
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+input:invalid{
+  box-shadow: none;
+}
+
+/* typography */
+h1 {
+  font-weight: 400;
+  font-size: var(--textsize-l);
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: var(--textsize-l);
+  padding: 0;
+  margin: 0;
+}
+
+h3, h4 {
+  font-weight: 400;
+  font-size: var(--textsize-m);
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: var(--textsize-m);
+  padding: 0;
+  margin: 0;
+}
+
+.p_pri, .p_btn, p, ul {
+  font-weight: 400;
+  font-size: var(--textsize-l);
+  padding: 0;
+  margin: 0;
+}
+
+.p_sec {
+  font-weight: 400;
+  font-size: var(--textsize-m);
+}
+
+.p_thi {
+  font-weight: 400;
+  font-size: var(--textsize-s);
+}
+
+/* information texts styling */
+.za-info-text--large {
+  font-size: var(--textsize-l);
+  font-weight: bold;
+  color: var(--textColor);
+  margin: 0.5rem;
+}
+
+.za-info-text--medium {
+  font-size: var(--textsize-m);
+  color: var(--textColor);
+  margin: 0.5rem;
+}
+
+/* input fields styling */
+
+.za-input-field {
+  width: 100%;
+  height: max-content;
+  border-color: var(--highlight);
+  border-radius: 3px;
+}

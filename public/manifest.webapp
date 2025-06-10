@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "name": "ZachrankaApp",
+  "display": "ZachrankaApp",
+  "subtitle": "Call emergency services.",
+  "description": "Call emergency services.",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/static/ZachrankaApp_56.png",
+    "112": "/static/ZachrankaApp_112.png",
+    "128": "/static/ZachrankaApp_128.png"
+  },
+  "developer": {
+    "name": "Kateřina Lojdová"
+  },
+  "categories": ["utilities"],
+  "theme_color": "#124139",
+  "cursor": false,
+  "type": "certified",
+  "priority": "high",
+  "permissions": {
+    "geolocation": {
+      "description": "Required for determining user's location in case of an incident"
+    },
+    "sms": {
+      "description": "Required to be able to communicate with the server of czech emergency services"
+    },
+    "telephony": {
+      "description": "Required to start a call with the emergency services"
+    },
+    "feature-detection": {
+      "description": "Required for detecting features, so the app can change behavior appropriately"
+    },
+    "contacts": {
+      "description": "The user can add an emergency contact from the contact list to be sent with their emergency message",
+      "access": "readonly"
+    },
+    "mobileconnection": {
+      "description": "Determine the type of mobile network the user is connected through"
+    },
+    "wifi-manage": {
+      "description": "Detect if the device is connected to the internet using wifi"
+    },
+    "systemXHR": {
+      "description": "Contact emergency services server when incident occurs and user is connected to the internet"
+    }
+  },
+  "installs_allowed_from": ["*"],
+  "locales": {
+    "cs-CZ": {
+      "name": "Záchranka",
+      "subtitle": "Mobilní aplikace pro tísňové volání",
+      "description": "Call emergency services"
+    }
+  },
+  "default_locale": "cs-CZ"
+}
